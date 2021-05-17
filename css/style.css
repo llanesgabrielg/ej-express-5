@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(0, 0, 16);
+    /* los hijos del contenedor body tienen propiedad flex */
+    display: flex; 
+    /* alinear en forma horizontal */
+    justify-content: center;
+    /* alinear en forma vertical */
+    align-items: center;
+
+}
+
+
+.form-box{
+    
+    background-color: rgb(16, 16, 16);
+    width: 400px;
+    height: 400px;
+    padding: 40px;
+    /* centrar todos los textos */
+    text-align: center;
+}
+.form-title{
+    color: white;
+    font-weight: 400;
+}
+.input-text , .input-submit {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 1px solid #3742fa;
+    width: 200px;
+    /* elimina el color de fondo blanco cuando selecciono*/
+    outline: none;
+    color: white;
+    /* redondear bordes */
+    border-radius: 25px;
+    /* efecto que suavisa el cambio cuando hago focus  */
+    transition: 0.30s;
+}
+/* realizo un cambio de tamaño en los imputs cuando lo selecciono */
+.input-text:focus {
+    width:280px;
+    border: 1px solid white;
+}
+.input-submit{
+    background: #1823f2;
+    border: none;
+}
+.input-submit:hover{
+    background: none;
+    border: 1px solid #3742fa;
+}
+.form-link{
+    display: block;
+    text-align: right;
+    color: white;
+}
